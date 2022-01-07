@@ -46,7 +46,7 @@ body {
   right: 0;
   height: 3px;
   content: "";
-  background-color: red;
+  background-color: #fff;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
 }
