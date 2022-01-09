@@ -257,7 +257,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-attachment: scroll;
+  background-attachment: fixed;
 }
 .header__heading {
   font-family: "Dancing Script", cursive;

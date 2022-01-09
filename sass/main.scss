@@ -144,7 +144,7 @@ body {
 	text-align: center;
 	color: $pure-white;
 	@include heroImages('../img/palm-mini.jpg');
-	background-attachment: scroll;
+	background-attachment: fixed;
 	&__heading {
 		font-family: 'Dancing Script', cursive;
 		font-size: 4.8rem;
