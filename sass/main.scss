@@ -340,7 +340,7 @@ body {
 
 	&__option {
 		margin: 1em 0;
-		box-shadow: 5px 5px 10px #2e2e2e2e;
+		box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.18);
 		background-color: $pure-white;
 		overflow: hidden;
 		&-img {
@@ -380,6 +380,54 @@ body {
 				background-color: $secondary-color;
 			}
 		}
+	}
+}
+
+//REVIEWS
+
+@media(max-width:767px){
+	.reviews.section-padding{
+		padding: 6em 0;
+	}
+}
+
+.reviews {
+	&__box {
+		position: relative;
+		padding: 2em;
+		margin: 2em;
+		border-radius: 8px;
+		box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
+		transition: transform 0.3s;
+
+		&:hover {
+			transform: scale(0.95);
+		}
+	}
+	&__box-img {
+		position: absolute;
+		top: 8%;
+		left: 75%;
+		transform: translate(-50%, -50%);
+
+		img {
+			width: 80px;
+			height: 80px;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+	}
+
+	&__box-quote {
+		margin-bottom: 1em;
+		font-size: 3rem;
+		color: $main-color;
+	}
+
+	&__box-text {
+		margin-bottom: 1em;
+		font-size: 1.4rem;
+		color: $dark;
 	}
 }
 
@@ -440,7 +488,7 @@ body {
 				margin-bottom: 0.5em;
 				font-size: 3.6rem;
 			}
-			&-btn{
+			&-btn {
 				padding: 1em;
 			}
 		}
@@ -553,16 +601,15 @@ body {
 		}
 	}
 
-
-	.offers{
+	.offers {
 		background-image: $blue-gradient, url('../img/offer-big.jpg');
 
-		&__option{
-			&-img{
+		&__option {
+			&-img {
 				object-fit: cover;
 				height: 300px;
 			}
-			&-text{
+			&-text {
 				font-size: 1.5rem;
 			}
 		}
